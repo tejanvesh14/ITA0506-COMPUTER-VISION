@@ -1,0 +1,11 @@
+import cv2
+
+img = cv2.imread(r"C:\Users\Sasha\Pictures\download.jpg",0)
+
+edge = cv2.Canny(img,50,150)
+
+cv2.imshow("Original",img)
+cv2.imshow("Boundary",edge)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
